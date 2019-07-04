@@ -41,6 +41,12 @@ body{
     }
 }
 
+.title{
+    margin-top: 8vw;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .header{
     background-image: url('./gallery/background.jpeg');
     background-size: cover;
@@ -64,20 +70,29 @@ body{
     }
 
     &__title{
-        margin-top: 8vw;
-        font-style: normal;
-        font-weight: 600;
+        color: #FFFFFF;
         font-size: 72px;
         line-height: 93px;
-        color: #FFFFFF;
     }
 }
 
-@media (max-width: 1000px) {
+.main{
+    color: #2b2b2b;
+    text-align: center;
+
+    .description__title{
+        font-size: 50px;
+    }
+
+    .description__paragraph{
+        margin: 0;
+    }
+}
+
+@media (max-width: 1040px) {
     .header__title {
       margin-top: 8vw;
       font-size: calc(3vw + 30px);
-      text-align: center;
       line-height: calc(3vw + 40px);
     }
     .header__logo {
@@ -85,14 +100,21 @@ body{
       margin-top: 5px;
     }
   }
-  @media (max-width: 450px) {
+@media (max-width: 450px) {
     .header{
         text-align: left;
         
         &__title {
-        text-align: left;
         font-size: 37px;
         line-height: calc(3vw + 39px);
         }
     }
-  }
+    .main{
+        text-align: left;
+        .description__title {
+            font-size: 30px;
+            line-height: calc(3vw + 39px);
+            margin-bottom: 10px;
+        }
+    }
+}
