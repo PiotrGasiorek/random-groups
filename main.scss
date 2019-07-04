@@ -14,7 +14,6 @@ body{
 
 .container{
     padding: 0 9vw;
-    text-align: center;
 }
 
 
@@ -28,16 +27,17 @@ body{
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    margin: auto;
     position: relative;
     color: #FFFFFF;
     transition: .2s ease-out;
     border: 3px solid #FFC90A;
     bottom: 0;
 
-    &:hover, &:focus{
-        bottom: 5px;
+    &:focus{
         background: transparent;
+    }
+    &:hover{
+        bottom: 5px;
     }
 }
 
@@ -45,9 +45,9 @@ body{
     background-image: url('./gallery/background.jpeg');
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-
+    text-align: center;
     
     &__navbar {
         transition: .7s;
@@ -69,8 +69,30 @@ body{
         font-weight: 600;
         font-size: 72px;
         line-height: 93px;
-        text-align: center;
         color: #FFFFFF;
     }
 }
 
+@media (max-width: 1000px) {
+    .header__title {
+      margin-top: 8vw;
+      font-size: calc(3vw + 30px);
+      text-align: center;
+      line-height: calc(3vw + 40px);
+    }
+    .header__logo {
+      width: 150px;
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 450px) {
+    .header{
+        text-align: left;
+        
+        &__title {
+        text-align: left;
+        font-size: 37px;
+        line-height: calc(3vw + 39px);
+        }
+    }
+  }

@@ -15,7 +15,6 @@ body {
 
 .container {
   padding: 0 9vw;
-  text-align: center;
 }
 
 .btn {
@@ -28,7 +27,6 @@ body {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  margin: auto;
   position: relative;
   color: #FFFFFF;
   -webkit-transition: .2s ease-out;
@@ -37,17 +35,21 @@ body {
   bottom: 0;
 }
 
-.btn:hover, .btn:focus {
-  bottom: 5px;
+.btn:focus {
   background: transparent;
+}
+
+.btn:hover {
+  bottom: 5px;
 }
 
 .header {
   background-image: url("./gallery/background.jpeg");
   background-size: cover;
   background-position: center center;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  text-align: center;
 }
 
 .header__navbar {
@@ -76,7 +78,30 @@ body {
   font-weight: 600;
   font-size: 72px;
   line-height: 93px;
-  text-align: center;
   color: #FFFFFF;
+}
+
+@media (max-width: 1000px) {
+  .header__title {
+    margin-top: 8vw;
+    font-size: calc(3vw + 30px);
+    text-align: center;
+    line-height: calc(3vw + 40px);
+  }
+  .header__logo {
+    width: 150px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    text-align: left;
+  }
+  .header__title {
+    text-align: left;
+    font-size: 37px;
+    line-height: calc(3vw + 39px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
