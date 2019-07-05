@@ -69,6 +69,7 @@ body {
   min-height: 100vh;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .header__navbar {
@@ -84,6 +85,15 @@ body {
           align-items: center;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__jumbotron {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header__logo {
