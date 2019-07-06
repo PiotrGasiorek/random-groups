@@ -6,7 +6,21 @@ html, body{
 body{
     margin: 0;
 }
+html::-webkit-scrollbar, html ::-webkit-scrollbar {
+  width: 6px;
+}
 
+html::-webkit-scrollbar-track, html ::-webkit-scrollbar-track {
+  background: #7C7C7C;
+}
+
+html::-webkit-scrollbar-thumb, html ::-webkit-scrollbar-thumb {
+  background: #176BEF;
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
+  background: #176BEF;
+}
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
@@ -29,15 +43,13 @@ body{
     border: none;
     width: 220px;
     height: 55px;
-    background: #176BEF;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    color: #7C7C7C;
     position: relative;
-    color: #FFFFFF;
     transition: .2s ease-out;
-    border: 3px solid #176BEF;
     bottom: 0;
 
     &:focus{
@@ -46,6 +58,15 @@ body{
     }
     &:hover{
         bottom: 5px;
+    }
+
+    &--primary{
+        color: #FFFFFF;
+        background: #176BEF;
+        border: 3px solid #176BEF;
+    }
+    &--secondary:focus{
+        box-shadow: 0px 18px 40px rgba(124, 124, 124, 0.35);
     }
 }
 
@@ -125,6 +146,7 @@ body{
         }
 
         &__title--small{
+            font-size: 20px;
             position: relative;
             &:after{
                 background: #176BEF;
@@ -142,6 +164,81 @@ body{
 
     }
     
+    .people{
+        &__label{
+            font-size: 16px;
+        }
+
+        &__input{
+            width: 285px;
+            display: block;
+            margin-top: 8px;
+            font-size: 20px;
+            padding: 10px 24px 8px 24px;
+            color: #7C7C7C;
+            border: 2px solid rgba(124, 124, 124, 0.5);
+            margin-bottom: 25px;
+            position: relative;
+            transition: .2s;
+
+            &::placeholder{
+                color: rgba(124, 124, 124, 0.5);
+            }
+
+            &:focus{
+                border-color: white;
+                border-bottom: 2px solid#176BEF;
+            }
+
+        }
+
+        &__card{
+            width: 100%;
+            height: 480px;
+            box-shadow: 34px 55px 69px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        &__header{
+            font-size: 36px;
+            margin: 0;
+        }
+
+        &__count{
+            float: right;
+            color: #7C7C7C;
+        }
+
+        &__divider{
+            height: 2px;
+            background: #7C7C7C;
+        }
+
+        &__list{
+            list-style: none;
+            color: #7C7C7C;
+            overflow: auto;
+            height: 275px;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        &__person{
+            margin-top: 35px;
+        }
+
+        &__deleteBtn{
+            float: right;
+        }
+
+        &__form{
+            display: flex;
+            align-items: center;
+        }
+        .clearBtn{
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 1045px) {
