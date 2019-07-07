@@ -30,6 +30,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     padding: 0 9vw;
 }
 
+.marginTop{
+    margin-top: 8vw;
+}
 
 
 .grid {
@@ -84,9 +87,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     font-weight: 600;
 }
 
-.marginTop{
-    margin-top: 8vw;
-}
 
 .header{
     background-image: url('./gallery/background.jpeg');
@@ -131,6 +131,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     text-align: left;
 
     .description{
+
         &__title{
             font-size: 60px;
         }
@@ -174,6 +175,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     }
     
     .people{
+
         &__label{
             font-size: 16px;
         }
@@ -243,48 +245,73 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     }
 
     .groups{
-        
-        &__form{
 
-            
+        &__form{
+            text-align: center;
+            margin-top: 150px;
         }
 
-        &__title{
-            text-align: center;
-            font-size: 60px;
+        &__label{
+            font-size: 50px;
+            font-weight: 600;
+            bottom: 85px;
+            position: relative;
+
+            &--small{
+                position: absolute;
+                font-size: 24px;
+                font-weight: 400;
+                left: 50%;
+                top: 80px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        &__btn {
+            float: left;
         }
 
         &__slider{
             
+            margin-bottom: 35px;
+            width: 100%;
             -webkit-appearance: none;     
             height: 7px;
-            width: 300px;
             outline: none;
-            opacity: .7;
             transition: opacity 0.2s;  
             -webkit-transition: 0.2s;  
-            background: linear-gradient(90deg, #7C7C7C 60%, #7C7C7C 60%);
+            background: #7C7C7C;
         
+            
+
             &::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
+                background: #176BEF;
+                box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
+                border-radius: 50px;
+                border: 3px solid #176BEF;
+                transition: .3s;
+                cursor: pointer;
+            }
+
+            &::-moz-range-thumb {
+                -webkit-appearance: none;
+                transition: .3s;
+                appearance: none;
+                width: 35px;
+                height: 35px;
+                border: 3px solid #176BEF;
                 background: #176BEF;
                 box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
                 border-radius: 50px;
                 cursor: pointer;
             }
 
-            &::-moz-range-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 30px;
-                height: 30px;
-                background: #176BEF;
-                box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
-                border-radius: 50px;
-                cursor: pointer;
+            &:focus::-moz-range-thumb{
+                background: white;
             }
         }
     }

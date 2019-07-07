@@ -58,12 +58,12 @@
                 <div class="grid">
                     <form class='people__form'>
                         <div>
-                        <label class='people__label' for="fullName">Full name</label>
-                        <input class='people__input' type="text" placeholder="Sophie Becket">
-                        <button class='people__btn btn btn--primary'>
-                            add person
-                        </button>
-                    </div>
+                            <label class='people__label' for="fullName">Full name</label>
+                            <input class='people__input' id='fullName' type="text" placeholder="Sophie Becket">
+                            <button class='people__btn btn btn--primary'>
+                                add person
+                            </button>
+                        </div>
                     </form>
                     <div class="people__card card">
                         <h3 class="people__header title">
@@ -104,10 +104,15 @@
             <div class="groups marginTop">
                 <div class="grid">
                     <form class="groups__form">
-                        <h2 class='groups__title title'>5</h2>
-                        <input  class='groups__slider' type="range" min='1' max='100' value='1'>
+                        <label class='groups__label' for="slider">
+                            5 
+                            <span class='groups__label--small'>
+                                groups
+                            </span>
+                        </label>
+                        <input  class='groups__slider' id='slider' type="range" min='1' max='100' value='1'>
                         <button class='groups__btn btn btn--primary'>
-                            generate groups
+                            generate
                         </button>
                     </form>
                     <div class="groups__card card"></div>
