@@ -43,14 +43,14 @@
                         <div class="description__photo"></div>
                     </div>
                     <div>
-                        <p class='description__paragraph'>
+                        <p class='description__paragraph text--primary'>
                             So basicly you add people to the main list.
                             <br>
                             In next step it is time to choose how many groups would you like to generate (from 1 to 10).
                             <br>
                             After all click submit button.
                         </p>
-                        <h5 class='description__title--small title'>That's it!</h5>
+                        <h5 class='description__summary title--small'>That's it!</h5>
                     </div>
                 </div>
             </div>
@@ -59,19 +59,19 @@
                     <form class='people__form'>
                         <div>
                             <label class='people__label' for="fullName">Full name</label>
-                            <input class='people__input' id='fullName' type="text" placeholder="Sophie Becket">
+                            <input class='people__input text--primary' id='fullName' type="text" placeholder="Sophie Becket">
                             <button class='people__btn btn btn--primary'>
                                 add person
                             </button>
                         </div>
                     </form>
                     <div class="people__card card">
-                        <h3 class="people__header title">
+                        <h3 class="people__header title--medium">
                             People
                             <span class='people__count'>3</span>
                         </h3>
-                        <hr class='people__divider'>
-                        <div class="people__list">
+                        <hr class='people__divider divider'>
+                        <div class="people__list list text--primary">
                             <p class="people__person">
                                 Tom Smith
                                 <img class='people__deleteBtn' src="./gallery/deleteBtn.svg" alt="deleteBtn">
@@ -112,10 +112,45 @@
                         </label>
                         <input  class='groups__slider' id='slider' type="range" min='1' max='100' value='1'>
                         <button class='groups__btn btn btn--primary'>
-                            generate
+                            create groups
                         </button>
                     </form>
-                    <div class="groups__card card"></div>
+                    <div class="groups__card card">
+                            <h3 class="groups__header title--medium">
+                                Groups
+                            </h3>
+                            <hr class='groups__divider divider'>
+                            <div class="groups__list text--primary">
+                                <button class='groups__accordion text--primary'>
+                                    Group 1
+                                    <img class='groups__expandIcon' src="./gallery/expandBtn.svg" alt="expandBtn">
+                                </button>
+                                <ul class='groups__group list'>
+                                    <li class='groups__person'>Tom Smith</li>
+                                    <li class='groups__person'>Anna Becket</li>
+                                    <li class='groups__person'>Helen Fiverdon</li>
+                                </ul>
+                                <button class='groups__accordion text--primary'>
+                                    Group 2
+                                    <img class='groups__expandIcon' src="./gallery/expandBtn.svg" alt="expandBtn">
+                                </button>
+                                <ul class='groups__group list'>
+                                    <li class='groups__person'>Tom Smith</li>
+                                    <li class='groups__person'>Anna Becket</li>
+                                    <li class='groups__person'>Helen Fiverdon</li>
+                                </ul>
+                                <button class='groups__accordion text--primary'>
+                                    Group 3
+                                    <img class='groups__expandIcon' src="./gallery/expandBtn.svg" alt="expandBtn">
+                                </button>
+                                <ul class='groups__group list'>
+                                    <li class='groups__person'>Tom Smith</li>
+                                    <li class='groups__person'>Anna Becket</li>
+                                    <li class='groups__person'>Helen Fiverdon</li>
+                                </ul>
+                                    
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>

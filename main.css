@@ -145,8 +145,49 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   text-align: left;
 }
 
+.main .title--small {
+  font-size: 20px;
+  position: relative;
+}
+
+.main .title--small:after {
+  background: #176BEF;
+  height: 4px;
+  width: 110px;
+  font-size: 20px;
+  line-height: 28px;
+  left: 0;
+  bottom: -4px;
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.main .title--medium {
+  font-size: 36px;
+  margin: 0;
+}
+
+.main .divider {
+  height: 3px;
+  background: #176BEF;
+  border-color: #176BEF;
+}
+
+.main .text--primary {
+  font-size: 20px;
+  color: #7C7C7C;
+  line-height: 28px;
+}
+
+.main .list {
+  list-style: none;
+  padding: 0;
+}
+
 .main .description__title {
   font-size: 60px;
+  line-height: 28px;
 }
 
 .main .description__photo {
@@ -159,28 +200,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .description__paragraph {
-  font-size: 20px;
-  line-height: 28px;
-  color: #7C7C7C;
   margin-bottom: 30px;
-}
-
-.main .description__title--small {
-  font-size: 20px;
-  position: relative;
-}
-
-.main .description__title--small:after {
-  background: #176BEF;
-  height: 6px;
-  width: 110px;
-  font-size: 20px;
-  line-height: 28px;
-  left: 0;
-  bottom: -4px;
-  position: absolute;
-  content: '';
-  display: block;
 }
 
 .main .people__label {
@@ -191,9 +211,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   width: 285px;
   display: block;
   margin-top: 8px;
-  font-size: 20px;
   padding: 10px 24px 8px 24px;
-  color: #7C7C7C;
   border: 2px solid rgba(124, 124, 124, 0.5);
   margin-bottom: 25px;
   position: relative;
@@ -222,28 +240,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   border-bottom: 2px solid #176BEF;
 }
 
-.main .people__header {
-  font-size: 36px;
-  margin: 0;
-}
-
 .main .people__count {
   float: right;
   color: #7C7C7C;
-}
-
-.main .people__divider {
-  height: 2px;
-  background: #7C7C7C;
-}
-
-.main .people__list {
-  list-style: none;
-  color: #7C7C7C;
-  overflow: auto;
-  height: 275px;
-  padding: 0;
-  font-size: 20px;
 }
 
 .main .people__person {
@@ -265,6 +264,11 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .people .clearBtn {
   margin-top: 20px;
+}
+
+.main .people__list {
+  overflow: auto;
+  height: 275px;
 }
 
 .main .groups__form {
@@ -289,8 +293,40 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
           transform: translate(-50%, -50%);
 }
 
+.main .groups__group {
+  padding-left: 1.8rem;
+  margin: 0;
+}
+
+.main .groups__person {
+  padding-top: 15px;
+}
+
 .main .groups__btn {
   float: left;
+}
+
+.main .groups__accordion {
+  height: 50px;
+  padding: 0px;
+  border: none;
+  width: 100%;
+  margin: 15px  0 0 0;
+  text-align: left;
+  color: #2b2b2b;
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main .groups__expandIcon {
+  float: right;
+  margin-top: 8px;
+}
+
+.main .groups__list {
+  overflow: auto;
+  height: 320px;
 }
 
 .main .groups__slider {
