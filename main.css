@@ -266,7 +266,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
           align-items: center;
 }
 
-.main .people .clearBtn {
+.main .people__clearBtn {
   margin-top: 20px;
 }
 
