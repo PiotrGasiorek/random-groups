@@ -38,10 +38,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     padding: 0 9vw;
 }
 
-.marginTop{
-    margin-top: 8vw;
-}
-
 
 .grid {
     display: grid;
@@ -95,6 +91,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     font-weight: 600;
 }
 
+.section{
+    min-height: 95vh;
+}
 
 .header{
     background-image: url('./gallery/background.jpeg');
@@ -178,6 +177,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     }
 
     .description{
+        padding-top: 8vw;
 
         &__title{
             font-size: 60px;
@@ -361,13 +361,13 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .footer{
+    margin-top: 60px;
     display: flex;
     background: $color-secondary;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     height: 60px;
-    margin-top: 10vw;
 
     &__link{
         color: $color-primary;
