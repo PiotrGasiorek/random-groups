@@ -254,6 +254,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .people__deleteBtn {
+  margin-top: -8px;
   float: right;
 }
 
