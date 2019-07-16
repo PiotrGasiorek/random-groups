@@ -66,7 +66,7 @@ function updatePeopleList() {
         `)
     }).join('');
 
-    // Update event listener
+    // Update event listener for btnsDel
     updateBtnDelPerson();
 }
 
