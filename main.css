@@ -288,7 +288,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   position: relative;
 }
 
-.main .groups__label--small {
+.main .groups__label--output {
   position: absolute;
   font-size: 50px;
   font-weight: 600;
