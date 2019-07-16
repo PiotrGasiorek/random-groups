@@ -86,7 +86,7 @@ function delPerson(){
 let slider = document.querySelector('#slider');
 let sliderOutput = document.querySelector('.groups__label--output');
 
-sliderOutput.innerHTML = slider.value;
+sliderOutput.innerHTML = Math.floor(slider.value / 10);
 
 slider.oninput = function () {
     sliderOutput.innerHTML = Math.floor(this.value / 10);
