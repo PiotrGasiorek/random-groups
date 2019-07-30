@@ -1,5 +1,5 @@
 import { smoothScroll } from './smoothScroll.js';
-import { sliderListener } from './slider.js';
+import { sliderListener, sliderOutput } from './slider.js';
 
 
 // Variables for people form
@@ -21,7 +21,7 @@ btnAddPerson.addEventListener('click', function(el){
         return alert('You have already added this person');
     }
     people.unshift(inputPerson.value);
-    inputPerson.value = '';
+    inputPerson.value = '';h
     updatePeopleList();
 })
 

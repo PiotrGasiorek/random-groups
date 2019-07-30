@@ -14,4 +14,4 @@ let sliderListener = slider.addEventListener('mousemove', function(){
     slider.style.background = color;
 });
 
-export { sliderListener }
+export { sliderListener, sliderOutput }
