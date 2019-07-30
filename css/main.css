@@ -96,7 +96,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .header {
-  background-image: url("./gallery/background.jpeg");
+  background-image: url("../gallery/background.jpeg");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
@@ -195,7 +195,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .description__photo {
-  background-image: url("./gallery/description__photo.png");
+  background-image: url("../gallery/description__photo.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
