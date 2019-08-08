@@ -1,7 +1,9 @@
 import { sliderOutput } from './slider.js';
+import { updateAccordionBtns } from './accordionEffect.js';
 import { people } from './people.js';
 
 let groups = [];
+let listOfGroups = document.querySelector('.groups__list');
 
 document.querySelector('.groups__btn').addEventListener('click', function(el){
     el.preventDefault();
@@ -28,9 +30,32 @@ function createRandomGroups(numberOfGroups) {
     while(copyOfPeople.length !== 0){
         groups[Math.floor(Math.random() * numberOfGroups)].unshift(copyOfPeople.shift());
     }
-
-    groups = JSON.stringify(groups);
     console.log(groups);
+
+    displayRandomGroups();
+    updateAccordionBtns();
 } 
+
+
+function displayRandomGroups(){
+    let groupsOutput = ``;
+    for(let i = 0; i < groups.length; i++){
+        groupsOutput += `
+            <button class='groups__accordion text--primary'>
+                Group ${i + 1}
+                <img class='groups__expandIcon' src="./gallery/expandBtn.svg" alt="expandBtn">
+            </button>
+            <ul class='groups__group list'>
+        `;
+
+        groups[i].forEach(person => {
+            groupsOutput += `<li class='groups__person'>${person}</li>`;
+        });
+
+        groupsOutput += `</ul>`;
+    };
+
+    listOfGroups.innerHTML = groupsOutput;
+}
 
 export { groups }
