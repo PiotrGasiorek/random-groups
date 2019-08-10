@@ -6,6 +6,7 @@ $color-tertiary: #2b2b2b;
 $color-quaternary: #7C7C7C;
 
 
+
 html, body{
     height: 100%;
     width: 100%;
@@ -45,8 +46,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     grid-gap: 70px;
 }
 
-
-
 .card{
     width: 100%;
     height: 480px;
@@ -59,7 +58,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     border: none;
     padding: 0 40px;
     height: 55px;
-    font-weight: 600;
+    font-weight: 500 !important;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
@@ -169,11 +168,13 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         font-size: 20px;
         color: $color-quaternary;
         line-height: 28px;
+        font-weight: 300 !important;
     }
 
     .list{
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
     .description{
@@ -279,33 +280,58 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         }
         
         &__group{
-            padding-left: 1.8rem;
-            margin: 0;
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .2s ease-out;
         }
 
         &__person{
-            padding-top: 15px;
+            padding-left: 16px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            transition: .3s;
+            font-weight: 300 !important;
+
+            &:hover{
+                background: #f7f7f7;
+            }
         }
 
         &__btn{
             float: left;
         }
 
-        &__accordion {
-            height: 50px;
-            padding: 0px;
+        .active{
+            background: $color-primary;
+            color: $color-secondary;
+        }
+
+        &__dropdown {
+            height: 60px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
             border: none;
             width: 100%;
-            margin: 15px  0 0 0;
             text-align: left;
             color: $color-tertiary;
             background: $color-secondary;
             transition: all 0.3s;
+            font-weight: 500 !important;
+
+            &:hover{
+                color: $color-secondary;
+                background: $color-primary;
+            }
         }
 
         &__expandIcon{
-            float: right;
-            margin-top: 8px;
+            width: 30px;
+            position: relative;
+            left: 20px;
         }
 
         &__list{
@@ -314,7 +340,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         }
 
         &__slider{
-            
             margin-bottom: 35px;
             width: 100%;
             -webkit-appearance: none;     

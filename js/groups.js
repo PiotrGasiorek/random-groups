@@ -1,5 +1,5 @@
 import { sliderOutput } from './slider.js';
-import { updateAccordionBtns } from './accordionEffect.js';
+import { updateDropdowns } from './dropdown.js';
 import { people } from './people.js';
 
 let groups = [];
@@ -33,7 +33,7 @@ function createRandomGroups(numberOfGroups) {
     console.log(groups);
 
     displayRandomGroups();
-    updateAccordionBtns();
+    updateDropdowns();
 } 
 
 
@@ -41,9 +41,9 @@ function displayRandomGroups(){
     let groupsOutput = ``;
     for(let i = 0; i < groups.length; i++){
         groupsOutput += `
-            <button class='groups__accordion text--primary'>
+            <button class='groups__dropdown text--primary'>
                 Group ${i + 1}
-                <img class='groups__expandIcon' src="./gallery/expandBtn.svg" alt="expandBtn">
+                <img class='groups__expandIcon' src="./gallery/expandBtn--blue.svg" alt="expandBtn">
             </button>
             <ul class='groups__group list'>
         `;
