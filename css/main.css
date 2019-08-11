@@ -177,9 +177,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .divider {
-  height: 3px;
-  background: #176BEF;
-  border-color: #176BEF;
+  height: 4px;
+  background: #7C7C7C;
+  border-color: #7C7C7C;
 }
 
 .main .list {

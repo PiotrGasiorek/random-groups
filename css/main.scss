@@ -167,9 +167,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
     }
 
     .divider{
-        height: 3px;
-        background: $color-primary;
-        border-color: $color-primary;
+        height: 4px;
+        background: $color-quaternary;
+        border-color: $color-quaternary;
     }
 
     
@@ -476,5 +476,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
     .people__input{
         width: 255px !important;
+
     }
 }
