@@ -1,3 +1,5 @@
+import { displayPopup } from './popups.js';
+
 // Variables for people form
 let people = [];
 let btnAddPerson = document.querySelector('.people__btn');
@@ -13,10 +15,10 @@ document.querySelector('.people__card .people__btn').addEventListener('click', f
 btnAddPerson.addEventListener('click', function(el){
     el.preventDefault();
     if(inputPerson.value === '' || inputPerson.value.length >= 18){
-        return alert('Check if field is empty or if it has more than 17 characters');
+        return displayPopup('Check if field is empty or if it has more than 17 characters');
     }
     else if(people.includes(inputPerson.value)){
-        return alert('You have already added this person');
+        return displayPopup('You have already added this person');
     }
     else{
         people.unshift(inputPerson.value);

@@ -1,6 +1,8 @@
 import { sliderOutput } from './slider.js';
 import { updateDropdowns } from './dropdown.js';
 import { people } from './people.js';
+import { displayPopup } from './popups.js';
+
 
 let groups = [];
 let listOfGroups = document.querySelector('.groups__list');
@@ -8,7 +10,7 @@ let listOfGroups = document.querySelector('.groups__list');
 document.querySelector('.groups__btn').addEventListener('click', function(el){
     el.preventDefault();
     if(parseInt(sliderOutput.innerHTML) > people.length){
-        return alert('You can not have more groups than people');
+        return displayPopup('You can not have more groups than people');
     }
     createRandomGroups(sliderOutput.textContent);
 });
