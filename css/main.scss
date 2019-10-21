@@ -153,14 +153,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         margin: 0;
     }
 
-    .divider{
-        height: 4px;
-        background: $color-quaternary;
-        border-color: $color-quaternary;
-    }
-
-    
-
     .list{
         list-style: none;
         padding: 0;
@@ -409,9 +401,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         &__photo{
             height: 180px !important;
         }
-        &__paragraph{
-            margin-top: 0;
-        }
     }
 }
 
@@ -434,15 +423,16 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
         max-width: 460px;
         margin: auto;
         background: $color-secondary;
-        padding: 24px 24px 30px 24px;
+        padding: 14px 24px 30px 24px;
 
         &__message{
             font-size: 18px;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         &__header{
             font-size: 30px;
+            margin-bottom: 1rem;
         }
     }
 }

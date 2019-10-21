@@ -161,12 +161,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   margin: 0;
 }
 
-.main .divider {
-  height: 4px;
-  background: #7C7C7C;
-  border-color: #7C7C7C;
-}
-
 .main .list {
   list-style: none;
   padding: 0;
@@ -448,9 +442,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   .description__photo {
     height: 180px !important;
   }
-  .description__paragraph {
-    margin-top: 0;
-  }
 }
 
 .wrapper {
@@ -471,16 +462,17 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   max-width: 460px;
   margin: auto;
   background: #FFFFFF;
-  padding: 24px 24px 30px 24px;
+  padding: 14px 24px 30px 24px;
 }
 
 .wrapper .popup__message {
   font-size: 18px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .wrapper .popup__header {
   font-size: 30px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 485px) {
