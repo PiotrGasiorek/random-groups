@@ -394,24 +394,17 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .footer {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 4rem 0 3rem 0;
   background: #FFFFFF;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 20px;
-  height: 60px;
+  font-weight: normal;
+  text-align: center;
 }
 
 .footer__link {
   color: #176BEF;
   text-decoration: none;
+  font-weight: 900;
 }
 
 @media (max-width: 1045px) {

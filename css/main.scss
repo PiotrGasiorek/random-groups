@@ -358,17 +358,16 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .footer{
-    margin-top: 60px;
-    display: flex;
+    margin: 4rem 0 3rem 0;
     background: $color-secondary;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
-    height: 60px;
+    font-weight: normal;
+    text-align: center;
 
     &__link{
         color: $color-primary;
         text-decoration: none;
+        font-weight: 900;
     }
 }
 
