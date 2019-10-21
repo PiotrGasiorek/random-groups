@@ -191,8 +191,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .description__title {
-  font-size: 60px;
-  line-height: 28px;
+  font-size: 40px;
 }
 
 .main .description__photo {
