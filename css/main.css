@@ -194,15 +194,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   font-size: 40px;
 }
 
-.main .description__photo {
-  background-image: url("../gallery/description__photo.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 80%;
-  height: 300px;
-}
-
 .main .description__paragraph {
   margin-bottom: 30px;
 }
