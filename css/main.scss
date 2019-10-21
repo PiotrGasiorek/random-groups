@@ -134,7 +134,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
     &__title{
         color: $color-secondary;
-        font-size: 72px;
+        font-size: 64px;
         line-height: 93px;
     }
 }
@@ -404,8 +404,8 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 @media (max-width: 1045px) {
     .header__title {
       margin-top: 8vw;
-      font-size: calc(3vw + 30px);
-      line-height: calc(3vw + 40px);
+      font-size: 35px;
+      line-height: 45px;
     }
     .header__logo {
       width: 150px;
