@@ -9,6 +9,7 @@ let inputPerson = document.querySelector('.people__input');
 document.querySelector('.people__card .people__btn').addEventListener('click', function(){
     document.querySelector('.people__list').innerHTML = '';
     people = [];
+    updatePeopleCount();
 })
 
 // Validate new person
@@ -24,6 +25,7 @@ btnAddPerson.addEventListener('click', function(el){
         people.unshift(inputPerson.value);
         inputPerson.value = '';
         displayPeopleList();
+        updatePeopleCount();
     }
 })
 
@@ -46,7 +48,7 @@ function btnsDelAddEventListener(){
     let btnsDelPerson = document.querySelectorAll('.people__deleteBtn');
     btnsDelPerson.forEach(btn => {
         btn.addEventListener('click', delPerson);
-    })
+    });
 }
 
 function delPerson(){
@@ -54,6 +56,11 @@ function delPerson(){
         return person !== this.parentNode.getAttribute('fullName');
     });
     this.parentNode.style.display = 'none';
+    updatePeopleCount();
+}
+
+function updatePeopleCount(){
+    document.querySelector('.people__count').textContent = people.length;
 }
 
 export { people }
