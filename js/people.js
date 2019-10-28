@@ -5,12 +5,14 @@ let people = [];
 let btnAddPerson = document.querySelector('.people__btn');
 let inputPerson = document.querySelector('.people__input');
 
+updatePeopleCount();
+
 // Clear people list
 document.querySelector('.people__card .people__btn').addEventListener('click', function(){
     document.querySelector('.people__list').innerHTML = '';
     people = [];
     updatePeopleCount();
-})
+});
 
 // Validate new person
 btnAddPerson.addEventListener('click', function(el){
