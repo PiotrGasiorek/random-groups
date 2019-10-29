@@ -6,6 +6,7 @@ import { displayPopup } from './popups.js';
 
 let groups = [];
 let listOfGroups = document.querySelector('.groups__list');
+let copyToClipboard;
 
 document.querySelector('.groups__btn').addEventListener('click', function(el){
     el.preventDefault();
@@ -32,15 +33,16 @@ function createRandomGroups(numberOfGroups) {
     while(copyOfPeople.length !== 0){
         groups[Math.floor(Math.random() * numberOfGroups)].unshift(copyOfPeople.shift());
     }
-    console.log(groups);
 
-    displayRandomGroups();
+    displayGroups();
     updateDropdowns();
+
 } 
 
 
-function displayRandomGroups(){
+function displayGroups(){
     let groupsOutput = ``;
+    copyToClipboard = ``;
     for(let i = 0; i < groups.length; i++){
         groupsOutput += `
             <button class='groups__dropdown text--primary'>
@@ -50,14 +52,23 @@ function displayRandomGroups(){
             <ul class='groups__group list'>
         `;
 
+        copyToClipboard += `Group ${i + 1} \n`;
+
         groups[i].forEach(person => {
             groupsOutput += `<li class='groups__person'>${person}</li>`;
+            copyToClipboard += `-${person} \n`;
         });
 
         groupsOutput += `</ul>`;
     };
 
     listOfGroups.innerHTML = groupsOutput;
+    enableCopingGroupsToClipboard();
+}
+
+function enableCopingGroupsToClipboard(){
+    console.log(copyToClipboard);
+    document.querySelector('.copyBtn').setAttribute('data-clipboard-text', copyToClipboard);
 }
 
 export { groups }
