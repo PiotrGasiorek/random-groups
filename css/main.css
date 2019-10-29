@@ -254,6 +254,11 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   height: 275px;
 }
 
+.main .groups__copyIcon {
+  position: relative;
+  top: 3px;
+}
+
 .main .groups__form {
   text-align: center;
   margin-top: 150px;
