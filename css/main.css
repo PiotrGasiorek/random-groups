@@ -224,7 +224,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .people__count {
   float: right;
-  color: #7C7C7C;
+  color: rgba(124, 124, 124, 0.5);
 }
 
 .main .people__person {
@@ -305,6 +305,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .groups__btn {
   float: left;
+  margin-top: 10px;
 }
 
 .main .groups .active {
@@ -344,7 +345,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .groups__list {
   overflow: auto;
-  height: 320px;
+  height: 275px;
 }
 
 .main .groups__slider {

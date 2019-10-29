@@ -275,6 +275,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
         &__btn{
             float: left;
+            margin-top: 10px;
         }
 
         .active{
@@ -309,7 +310,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
         &__list{
             overflow: auto;
-            height: 320px;
+            height: 275px;
         }
 
         &__slider{
