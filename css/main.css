@@ -441,6 +441,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   .description__photo {
     height: 180px !important;
   }
+  .btn {
+    width: 100%;
+  }
 }
 
 .wrapper {
