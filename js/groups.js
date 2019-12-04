@@ -47,7 +47,7 @@ function displayGroups(){
         groupsOutput += `
             <button class='groups__dropdown text--primary'>
                 Group ${i + 1}
-                <img class='groups__expandIcon' src="./gallery/expandBtn--blue.svg" alt="expandBtn">
+                <img class='groups__expandIcon' src="./gallery/expandBtn--pink.svg" alt="expandBtn">
             </button>
             <ul class='groups__group list'>
         `;

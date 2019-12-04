@@ -17,7 +17,7 @@ function updateDropdowns(){
         })
         button.addEventListener('mouseout', function(){
             if(!this.classList.contains('active')){
-                this.lastElementChild.src = './gallery/expandBtn--blue.svg';
+                this.lastElementChild.src = './gallery/expandBtn--pink.svg';
             }
         })
     });
@@ -29,7 +29,7 @@ function toggleActiveStyles(button){
         button.lastElementChild.style.transform = 'rotate(180deg)';
     }
     else{
-        button.lastElementChild.src = './gallery/expandBtn--blue.svg';
+        button.lastElementChild.src = './gallery/expandBtn--pink.svg';
         button.lastElementChild.style.transform = 'rotate(0deg)';
         
         const mouseoverEvent = new Event('mouseover');
