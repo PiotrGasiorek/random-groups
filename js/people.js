@@ -37,7 +37,7 @@ function displayPeopleList() {
         return (`
             <p class="people__person" fullName='${person}'>
                 ${person}
-                <img class='people__deleteBtn' src="./gallery/deleteBtn.svg" alt="deleteBtn">
+                <img class='people__deleteBtn' src="./gallery/delete.svg" alt="deleteBtn">
             </p>
         `)
     }).join('');
