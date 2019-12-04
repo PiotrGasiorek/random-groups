@@ -10,7 +10,7 @@ slider.oninput = function () {
 
 let sliderListener = slider.addEventListener('mousemove', function(){
     var x = slider.value;
-    var color = 'linear-gradient(90deg, rgb(23, 107, 239)' + x + '%, rgb(124, 124, 124)' + x + '%)';
+    var color = 'linear-gradient(90deg, rgb(223, 66, 111)' + x + '%, rgb(124, 124, 124)' + x + '%)';
     slider.style.background = color;
 });
 
