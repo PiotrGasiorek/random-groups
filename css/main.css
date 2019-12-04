@@ -24,12 +24,12 @@ html::-webkit-scrollbar-track, html ::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb, html ::-webkit-scrollbar-thumb {
-  background: #176BEF;
+  background: #DF426F;
   border-radius: 5px;
 }
 
 html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
-  background: #176BEF;
+  background: #DF426F;
 }
 
 * {
@@ -64,10 +64,11 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   padding: 0 40px;
   height: 55px;
   font-weight: 500 !important;
-  font-size: 22px;
+  font-size: 18px;
+  border-radius: 50px;
   line-height: 36px;
   text-align: center;
-  color: #176BEF;
+  color: #DF426F;
   position: relative;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
@@ -76,8 +77,8 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .btn:focus {
   outline: none;
-  -webkit-box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
-          box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
+  -webkit-box-shadow: 0px 18px 40px rgba(223, 66, 111, 0.35);
+          box-shadow: 0px 18px 40px rgba(223, 66, 111, 0.35);
 }
 
 .btn:hover {
@@ -86,12 +87,12 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .btn--primary {
   color: #FFFFFF;
-  background: #176BEF;
-  border: 3px solid #176BEF;
+  background: #DF426F;
+  border: 3px solid #DF426F;
 }
 
 .btn--secondary {
-  border: 3px solid #176BEF;
+  border: 3px solid #DF426F;
 }
 
 .title {
@@ -221,7 +222,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .people__input:focus {
   border-color: #FFFFFF;
-  border-bottom: 2px solid #176BEF;
+  border-bottom: 2px solid #DF426F;
 }
 
 .main .people__count {
@@ -316,7 +317,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .groups .active {
-  background: #176BEF;
+  background: #DF426F;
   color: #FFFFFF;
 }
 
@@ -341,7 +342,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
 .main .groups__dropdown:hover {
   color: #FFFFFF;
-  background: #176BEF;
+  background: #DF426F;
 }
 
 .main .groups__expandIcon {
@@ -372,11 +373,11 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   appearance: none;
   width: 35px;
   height: 35px;
-  background: #176BEF;
-  -webkit-box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
-          box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
+  background: #DF426F;
+  -webkit-box-shadow: 0px 18px 40px rgba(223, 66, 111, 0.35);
+          box-shadow: 0px 18px 40px rgba(223, 66, 111, 0.35);
   border-radius: 50px;
-  border: 3px solid #176BEF;
+  border: 3px solid #DF426F;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -390,9 +391,9 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
        appearance: none;
   width: 35px;
   height: 35px;
-  border: 3px solid #176BEF;
-  background: #176BEF;
-  box-shadow: 0px 18px 40px rgba(23, 107, 239, 0.35);
+  border: 3px solid #DF426F;
+  background: #DF426F;
+  box-shadow: 0px 18px 40px rgba(223, 66, 111, 0.35);
   border-radius: 50px;
   cursor: pointer;
 }
@@ -410,7 +411,7 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .footer__link {
-  color: #176BEF;
+  color: #DF426F;
   text-decoration: none;
   font-weight: 900;
 }
@@ -458,7 +459,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
