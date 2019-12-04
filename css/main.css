@@ -346,6 +346,10 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   background: #DF426F;
 }
 
+.main .groups__dropdown:focus {
+  outline: none;
+}
+
 .main .groups__expandIcon {
   width: 30px;
   position: relative;

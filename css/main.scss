@@ -310,6 +310,10 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
                 color: $color-secondary;
                 background: $color-primary;
             }
+
+            &:focus{
+                outline: none;
+            }
         }
 
         &__expandIcon{
