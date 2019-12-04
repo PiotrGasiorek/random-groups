@@ -185,21 +185,23 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 
         &__input{
             width: 285px;
+            border-radius: 2px;
             display: block;
             margin-top: 8px;
             padding: 10px 24px 8px 24px;
             border: 2px solid rgba(124, 124, 124, 0.5);
             margin-bottom: 25px;
             position: relative;
-            transition: .2s;
 
             &::placeholder{
                 color: rgba(124, 124, 124, 0.5);
             }
 
             &:focus{
-                border-color: $color-secondary;
-                border-bottom: 2px solid$color-primary;
+                outline: none;
+                border: none;
+                border-top: 2px solid $color-secondary;
+                border-bottom: 2px solid $color-primary;
             }
 
         }
