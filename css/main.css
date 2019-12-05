@@ -154,11 +154,6 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   text-align: left;
 }
 
-.main .text-bold {
-  font-size: 20px;
-  position: relative;
-}
-
 .main .title--medium {
   font-size: 36px;
   margin: 0;
