@@ -166,17 +166,18 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 }
 
 .main .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 100px 0;
+  margin: 0 auto;
 }
 
 .main .description__title {
-  font-size: 40px;
-  margin-bottom: 0px;
+  font-size: 30px;
 }
 
 .main .description__paragraph {
@@ -419,8 +420,8 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
 @media (max-width: 1045px) {
   .header__title {
     margin-top: 8vw;
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 27px;
+    line-height: 35px;
   }
   .header__logo {
     width: 150px;
@@ -436,10 +437,16 @@ html::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
   .header {
     text-align: left;
   }
+  .header__jumbotron {
+    top: 70%;
+  }
   .description__title {
-    font-size: 41px !important;
-    line-height: calc(3vw + 39px);
-    margin-bottom: 10px;
+    font-size: 27px;
+    line-height: calc(1.6 * 27px);
+    text-align: left;
+  }
+  .description__paragraph {
+    text-align: left;
   }
   .description__photo {
     height: 180px !important;
